@@ -1,4 +1,11 @@
-# JsRouting 📍💻
+<p align="center">
+  <img width="170rem" src="https://i.ibb.co/3B3tDq6/480px-Unofficial-Java-Script-logo-2-svg.jpg" />
+</p>
+
+<div align="center">
+  <h1>JsRouting 📍💻</h1>
+</div>
+
 ### Simple JavaScript routing system with one slash route `/` <br>
 ### ⚙ ```v1.0``` <br>
 ```https://example.com/example``` ✔ <br>
@@ -63,3 +70,9 @@ jsRoute.get("/example/two") ❌
 ```js
 jsRoute.get("/example/:parameter") ❌
 ```
+<br><br>
+
+# 🤔 if you have a problem contact me via : 
+## issues section : https://github.com/im95u/JsRouting/issues
+## Discord : `9⁵#0095`
+## Discord Server : `https://discord.gg/jwm3f4d5MJ`
