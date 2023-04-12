@@ -6,25 +6,27 @@
   <h1>JsRouting 📍💻</h1>
 </div>
 
-### Simple JavaScript routing system with one slash route `/` <br>
-### ⚙ ```v1.0``` <br>
-```https://example.com/example``` ✔ <br>
-```https://example.com/:username``` ✔ <br><br>
-```https://example.com/home/example``` ❌<br>
-```https://example.com/home/example/example/...``` ❌
-<br><br>
+## About
 
-### JsRoute Script :
-```
-https://cdn.jsdelivr.net/gh/im95u/JsRouting/index.js
-```
-<br>
+JsRouting is a simple JavaScript routing system with one slash route `/`.
 
-# Documentation 📜
+### Compatibility
 
-## 1️⃣ First setup your server 
-### Apache `.htaccess`
+- `https://example.com/example` ✔ 
+- `https://example.com/:username` ✔ 
+- `https://example.com/home/example` ❌
+- `https://example.com/home/example/example/...` ❌
+
+### CDN :
+
+`https://cdn.jsdelivr.net/gh/im95u/JsRouting/index.js`
+
+## Documentation 📜
+1️⃣ First setup your server
+Apache .htaccess
+
 ```js
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
@@ -35,44 +37,52 @@ https://cdn.jsdelivr.net/gh/im95u/JsRouting/index.js
 </IfModule>
 ```
 
-### nginx
+Nginx
+
 ```js
+
 location / {
   try_files $uri $uri/ /index.html;
 }
 ```
-<br>
 
-## 2️⃣ Second Start Using JsRoute
-### 🔴 `Please make sure you using this codes after page loaded successfully` 🔴
-### ✨ Simple Route 
+2️⃣ Second Start Using JsRoute
+
+`🔴 Please make sure you use this code after the page has loaded successfully 🔴`
+
+✨ Simple Route
+
 ```js
-var jsRoute = new JsRoute()
 
-jsRoute.get("/example", function(){
-  alert("Wow! 😁")
-})
+var jsRoute = new JsRoute();
+
+jsRoute.get("/example", function() {
+  alert("Wow! 😁");
+});
 ```
 
-### 🎉 Parameter Route 
+🎉 Parameter Route
 ```js
-var jsRoute = new JsRoute()
 
-jsRoute.get("/:username", function(username){
-  alert("Wow! 😁\nUsername : " + username)
-})
+var jsRoute = new JsRoute();
+
+jsRoute.get("/:username", function(username) {
+  alert("Wow! 😁\nUsername : " + username);
+});
 ```
 
-### 📛 Some Errors
+📛 Some Errors
+
 ```js
 jsRoute.get("/example/two") ❌
 ```
+
 ```js
 jsRoute.get("/example/:parameter") ❌
 ```
-<br><br>
 
-# 🤔 if you have a problem contact me via : 
-## issues section : https://github.com/im95u/JsRouting/issues
-## Discord : `9⁵#0095`
-## Discord Server : `https://discord.gg/jwm3f4d5MJ`
+#### 🤔 If you have a problem, contact me via:
+
+Issues section: https://github.com/im95u/JsRouting/issues
+
+Discord: `upsilun#6775`
