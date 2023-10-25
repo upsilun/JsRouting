@@ -12,7 +12,7 @@ class JsRoute {
             if (route == routeString) {
                 callbackfunction()
             } else {
-                console.log("✨ JsRoute [" + currentdate.getHours() + ":" + currentdate.getMinutes() + "] :\nRouting System Is Active")
+                console.log("✨ JsRoute v1.0 [" + currentdate.getHours() + ":" + currentdate.getMinutes() + "] :\nRouting System Is Active")
             }
         }
     };
